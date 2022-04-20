@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Manrope&family=Roboto:wght@400;900&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Manrope&family=Orelega+One&family=Roboto:wght@400;900&family=Square+Peg&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding-top: 15em;
+    padding-bottom: 15em;
+    background-image: url("./img.png");
+    background-size: cover;
+    background-color: #FCEFEF;
+}
+
+#formEl{
+    width: 50%;
+    background-color: rgba(105, 105, 105, .8);
+    border-radius: 20px;
+    margin: -7em auto;
+    text-align: center;
+    min-width: 350px;
+    max-width: 700px;
+    padding-top: 0.3px;
+    padding-bottom: 1.2em;
+    padding-left: -5em;
+}
+
+h1{
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    font-size: 3.7rem;
+}
+
+input{
+    width: 65%;
+    color: rgba(10, 9, 9, .8);
+    padding: 0.25em;
+    border: solid white 2px;
+    font-family: 'Orelega One', cursive;
+    font-size: 1.1rem;
+}
+
+.input-format{
+    margin-bottom: 8px;
+}
+
+#btn{
+background: white;
+color: rgba(105, 105, 105, .8);
+  border-radius: 31.5px;
+  border-style: none;
+  text-align: center;
+  font-family: 'Orelega One', cursive;
+  width: 8em;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  margin-top: 2em;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btn:focus{
+    color: #ffffff;
+    box-shadow: 0px 0px 0px 1px white;
+    animation: anim-shadow 0.3s forwards;
+}
+
+@keyframes anim-shadow{
+    7%{
+        box-shadow: 0px 0px .3em .3em white
+    }
+}
