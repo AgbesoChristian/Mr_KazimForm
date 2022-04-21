@@ -12,16 +12,16 @@ body{
     padding-bottom: 15em;
     background-image: url("./img.png");
     background-size: cover;
-    background-color: #FCEFEF;
+    background-color: #ffffff;
 }
 
 #formEl{
-    width: 50%;
+    width: 60%;
     background-color: rgba(105, 105, 105, .8);
     border-radius: 20px;
     margin: -7em auto;
     text-align: center;
-    min-width: 350px;
+    min-width: 250px;
     max-width: 700px;
     padding-top: 0.3px;
     padding-bottom: 1.2em;
@@ -38,14 +38,16 @@ h1{
 input{
     width: 65%;
     color: rgba(10, 9, 9, .8);
-    padding: 0.25em;
+    padding: 0.50em;
     border: solid white 2px;
     font-family: 'Orelega One', cursive;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    border-radius: 4px;
 }
 
 .input-format{
     margin-bottom: 8px;
+    width: 100%;
 }
 
 #btn{
@@ -58,21 +60,39 @@ color: rgba(105, 105, 105, .8);
   width: 8em;
   padding-bottom: .5em;
   padding-top: .5em;
-  margin-top: 2em;
-  font-size: 1.1rem;
+  margin-top: 1em;
+  font-size: 1rem;
   text-transform: uppercase;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
-#btn:focus{
-    color: #ffffff;
+#btn:hover{
+    color: rgba(105, 105, 105, .8);
     box-shadow: 0px 0px 0px 1px white;
-    animation: anim-shadow 0.3s forwards;
+    animation: anim-shadow 1s forwards;
 }
 
 @keyframes anim-shadow{
     7%{
         box-shadow: 0px 0px .3em .3em white
+    }
+}
+
+@media (max-width:500px){
+    #formEl{
+        width: 100%;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    .input-format{
+        margin-left: 1em;
+        width: 90%;
+    }
+
+    body{
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
